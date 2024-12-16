@@ -11,8 +11,8 @@ public class TelegramAlarmHandler extends StreamHandler {
     public void publish(LogRecord record) {
 
         if (isLoggable(record)) {
-            String sendMessage = "https://api.telegram.org/bot8006714385:AAENRhFARP5jwCl13VzVj2b2uc_o4HR06oo/sendMessage";
-            String chatId = "2123513095";
+            String sendMessage = "https://api.telegram.org/botToken/sendMessage";
+            String chatId = "chatId";
             String formatter = getFormatter().format(record);
             String bodyMessage = """
                     {
